@@ -28,12 +28,8 @@ jobs:
           git config --local user.email "erlanggamardiansyah759@gmail.com"
           git config --local user.name "angga759"
           git add -A
-          
-          $a=array("😁","😂","🙏","😱","👿","💩","🙈","🐐","🚀");
-          
-          $rand=array_rand($a,3);
-          
-          git commit -m "feat: ${a[$rand[2]]} auto commit"
+          waktu=`date '+%Y-%m-%dT%H:%M:%SZ'`
+          git commit -m "waktu"
           
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
